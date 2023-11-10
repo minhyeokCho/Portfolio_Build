@@ -6,7 +6,7 @@ import Detail from './sub/Detail';
 
 const Router = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				{/* useParams */}
 				<Route path="/" element={<Main/>}/>
