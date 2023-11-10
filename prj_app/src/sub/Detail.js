@@ -14,6 +14,8 @@ const Detail = ({item}) => {
 	const [dataList, setDataList] = useState(data);
 	const info = dataList[itemId];
 	const [colorCode, setColorCode] = useState(data[itemId].point);
+	const [titleList, setTitle] = useState(data[itemId].title)
+	const [type, setType] = useState(data[itemId].type)
 
 	const settings = {
 		infinite: true,
@@ -35,7 +37,7 @@ const Detail = ({item}) => {
 					<figure>
 						<img src="/Portfolio_Build/img/temp_02.jpg" alt="" />
 					</figure>
-					<h2>SK렌터카 UI/UX<br/>온라인 플랫폼 리뉴얼 구축</h2>
+					<h2>{titleList}<br/>온라인 플랫폼 리뉴얼 구축</h2>
 					<p></p>
 					<span className='arrow'></span>
 				</div>
@@ -44,11 +46,11 @@ const Detail = ({item}) => {
 				{/* Portfolio 정보 */}
 				<div className='pf_info' style={{borderColor:colorCode}}>
 					<div className='inner'>
-						<h3>SK렌터카 UI/UX 온라인 플랫폼 리뉴얼 구축</h3>
+						<h3>{titleList}</h3>
 
 						<dl>
 							<dt style={{borderColor:colorCode}}>TYPE</dt>
-							<dd>WEB / MOBILE / APP</dd>
+							<dd>{type}</dd>
 						</dl>
 						<dl>
 							<dt style={{borderColor:colorCode}}>RELEASE DATE</dt>
@@ -117,13 +119,13 @@ const Detail = ({item}) => {
 							<div className='scroll_area'>
 								<Slider {...settings} className='pf_slide'>
 									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section02.png" alt="" />
-									</div>
-									<div>
 										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section04.png" alt="" />
 									</div>
 									<div>
 										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section03.png" alt="" />
+									</div>
+									<div>
+										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section02.png" alt="" />
 									</div>
 								</Slider>
 							</div>
