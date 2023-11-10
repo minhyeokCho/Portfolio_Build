@@ -3,26 +3,29 @@ export default[
 		id:0,
 		type:'Web',
 		url : "/Portfolio_Build/img/jb_logo.png",
-		title: 'SK렌터카 UI/UX',
+		title: '전북대도서관',
 		point: '#005596'
 	},
 	{
 		id:1,
 		type:'APP',
-		url : "https://www.skcarrental.com/resources/renewal_assets/img/common/img_gate_02.png?v=1.2",
-		title: '',
+		url : "http://pubswyliedev01.wyliedev.co.kr/skrentacar/dotcom/pc/assets/img/etc/@intro02.jpg",
+		title: 'SK렌터카 UI/UX',
+		point : '#fa4e29'
 	},
 	{
 		id:2,
 		type:'Hybrid',
-		url : "https://www.skcarrental.com/resources/renewal_assets/img/common/img_gate_02.png?v=1.2",
-		title: 'SK렌터카 UI/UX',
+		url : "http://pubswyliedev01.wyliedev.co.kr/skrentacar/billycar/pc/assets/img/etc/@intro01.jpg",
+		title: '빌리카',
+		point : '#0764D4'
 	},
 	{
 		id:3,
 		type:'Hybrid',
-		url : "https://www.skcarrental.com/resources/renewal_assets/img/common/img_gate_02.png?v=1.2",
-		title: '',
+		url : "http://godo.cu_app.com/images/temp/bnr_02.jpg",
+		title: '포켓 CU',
+		point: '#37d243',
 	}
 ]
 

@@ -26,7 +26,7 @@ const Detail = ({item}) => {
 
 	return (
 		<>
-			<a href="/" title='BACK' className='close'>
+			<a href="/Portfolio_Build" title='BACK' className='close'>
 				<div className='close_inner'><em className='num_01' style={{backgroundColor:colorCode}}></em><em className='num_02' style={{backgroundColor:colorCode}}></em><span>BACK</span></div>
 			</a>
 			<div className='sub_wrap'>
@@ -85,7 +85,7 @@ const Detail = ({item}) => {
 				<div className='pf_sec'>
 					<div className='frame frame_pc'>
 						<figure className='frame_img'>
-							<img src="/img/frame_pc.png" alt="" />
+							<img src="/Portfolio_Build/img/frame_pc.png" alt="" />
 						</figure>
 						<div className='frame_inner'>
 							<div className='scroll_area'>
@@ -111,7 +111,7 @@ const Detail = ({item}) => {
 				<div className='pf_sec'>
 					<div className='frame frame_mo'>
 						<figure className='frame_img'>
-							<img src="/img/frame_mo.png" alt="" />
+							<img src="/Portfolio_Build/img/frame_mo.png" alt="" />
 						</figure>
 						<div className='frame_inner'>
 							<div className='scroll_area'>

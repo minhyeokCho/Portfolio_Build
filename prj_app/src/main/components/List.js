@@ -35,7 +35,7 @@ const List = () => {
 					<ul>
 						{tab.map((item, index) => (
 							<li key = {index} className={index === tabActive ? 'active':''}>
-								<a href="#" onClick={() => tabFilter(index, item.name)}>{item.name}</a>
+								<a href="#n" onClick={() => tabFilter(index, item.name)}>{item.name}</a>
 							</li>
 						))}
 					</ul>
