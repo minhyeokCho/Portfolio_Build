@@ -8,7 +8,7 @@ const Card = () => {
 				<div className="card_header">
 					<img className="avatar" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="avatar" />
 					<div className='txt_wrap'>
-						<h1 className="name">William Rocheald</h1>
+						<h1 className="name">MINHYEOK</h1>
 						<p className="job">UI Developer</p>
 					</div>
 				</div>
