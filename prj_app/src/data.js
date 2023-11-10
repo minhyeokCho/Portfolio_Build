@@ -9,21 +9,21 @@ export default[
 	{
 		id:1,
 		type:'APP',
-		url : "http://pubswyliedev01.wyliedev.co.kr/skrentacar/dotcom/pc/assets/img/etc/@intro02.jpg",
+		url : "https://homepage.skcarrental.com/skr/common/comm-img-srvr/2023/06/15/pc_main-bnr.jpg",
 		title: 'SK렌터카 UI/UX',
 		point : '#fa4e29'
 	},
 	{
 		id:2,
 		type:'Hybrid',
-		url : "http://pubswyliedev01.wyliedev.co.kr/skrentacar/billycar/pc/assets/img/etc/@intro01.jpg",
+		url : "https://www.billycar.co.kr/pc_assets/img/etc/@recommend01_2.jpg",
 		title: '빌리카',
 		point : '#0764D4'
 	},
 	{
 		id:3,
 		type:'Hybrid',
-		url : "http://godo.cu_app.com/images/temp/bnr_02.jpg",
+		url : "https://play-lh.googleusercontent.com/dipiXa5mekfIkjxfIGz00vdupS7Mh_9m3LnwP393wBSNmwWQYW-1junU4LT--ZoEtgtM=w240-h480-rw",
 		title: '포켓 CU',
 		point: '#37d243',
 	}
