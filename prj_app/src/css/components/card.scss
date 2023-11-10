@@ -1,0 +1,296 @@
+/* ============================== [ Card UI ] ========================================================================================== */
+.main_visual {
+	height: 100vh;
+	background: url(../../../public/img/main_bg.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main_visual .card {
+	overflow: hidden;
+	width: 380px;
+	box-sizing: border-box;
+	// overflow-y: auto;
+	// overflow-x: hidden;
+	position: relative;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	transition: 0.3s;
+	flex-direction: column;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+	&_header {
+		position: relative;
+		display: flex;
+		height: 200px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		transition: 0.3s;
+		padding: 0 20px;
+		box-sizing: border-box;
+
+		* {
+			transition: 0.5s;
+		}
+		.avatar {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+			object-fit: cover;
+			position: absolute;
+			left: 50%;
+			top: 20px;
+			transform: translateX(-50%);
+		}
+		.name {
+			padding-top: 130px;
+			font-size: 22px;
+			font-weight: 700;
+		}
+		.job {
+			font-size: 15px;
+			font-weight: 400;
+			margin-top: 5px;
+			text-align: center;
+		}
+	}
+	&_content {
+		margin-top: 40px;
+	}
+	&_sec {
+		padding: 0 20px;
+	}
+	&_subtitle {
+		color: #2b2c48;
+		font-weight: 700;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	&_desc {
+		line-height: 1.6em;
+		color: #636b6f;
+		font-size: 13px;
+		margin-bottom: 20px;
+	}
+	&_social {
+		display: flex;
+		a {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			background-color: rgba(93, 133, 193, 0.05);
+			margin-right: 10px;
+			margin-bottom: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			*{
+				width: 16px;
+				fill:#a5b5ce;
+			}
+		}
+	}
+
+	&_timeline {
+		margin: 30px 0;
+		position: relative;
+		&:after {
+			background: linear-gradient(
+				to top,
+				rgba(134, 214, 243, 0) 0%,
+				rgba(81, 106, 204, 1) 100%
+			);
+			content: "";
+			left: 42px;
+			width: 2px;
+			top: 0;
+			height: 100%;
+			position: absolute;
+			content: "";
+		}
+	}
+
+	.card_item {
+		position: relative;
+		padding: 0 20px 30px 60px;
+		z-index: 1;
+		&:last-child {
+			padding-bottom: 5px;
+		}
+
+		&:after {
+			content: attr(data-year);
+			width: 10px;
+			position: absolute;
+			top: 0;
+			left: 37px;
+			width: 8px;
+			height: 8px;
+			line-height: 0.6;
+			border: 2px solid #fff;
+			font-size: 11px;
+			text-indent: -35px;
+			border-radius: 50%;
+			color: rgba(#868686, 0.7);
+			background: linear-gradient(
+				to bottom,
+				lighten(#516acc, 20%) 0%,
+				#516acc 100%
+			);
+		}
+		&_title {
+			font-weight: 500;
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+		&_desc {
+			font-size: 13px;
+			color: #6f6f7b;
+			line-height: 1.5;
+		}
+	}
+
+	&_btn {
+		display: flex;
+		background-color: #fff;
+		margin-top: auto;
+		position: sticky;
+		bottom: 0;
+		left: 0;
+
+		button {
+			flex: 1 1 auto;
+			user-select: none;
+			background: 0;
+			font-size: 13px;
+			border: 0;
+			padding: 15px 5px;
+			cursor: pointer;
+			color: #5c5c6d;
+			transition: 0.3s;
+			font-family: "Jost", sans-serif;
+			font-weight: 500;
+			outline: 0;
+			border-bottom: 3px solid transparent;
+			transition: .3s;
+
+			&.isActive,
+			&:hover {
+				color: #2b2c48;
+				border-bottom: 3px solid #8a84ff;
+				background: linear-gradient(
+					to bottom,
+					rgba(127, 199, 231, 0) 0%,
+					rgba(207, 204, 255, 0.2) 44%,
+					rgba(211, 226, 255, 0.4) 100%
+				);
+			}
+		}
+	}
+
+	&_contact_wrapper {
+		margin: 20px 0 30px;
+	}
+
+	&_contact {
+		display: flex;
+		align-items: center;
+		margin-bottom: 16px;
+		i{
+			display: block;
+			width: 30px;
+			padding-right: 12px;
+			border-right: 1px solid #dfe2ec;
+			color: #6f6f7b;
+			box-sizing: border-box;
+		}
+		p{
+			flex:1;
+			font-size: 13px;
+			padding-left: 12px;
+			color: #6f6f7b;
+			line-height: 1.6;
+		}
+
+	}
+
+	.contact_me {
+		border: 0;
+		outline: none;
+		background: linear-gradient(
+			to right,
+			rgba(83, 200, 239, 0.8) 0%,
+			rgba(81, 106, 204, 0.8) 96%
+		);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+		color: #fff;
+		padding: 12px 16px;
+		width: 100%;
+		border-radius: 5px;
+		margin-top: 25px;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 500;
+		transition: 0.3s;
+	}
+
+}
+
+
+
+.card_main > div {
+	display: none;
+	padding: 0 20px;
+	transition: .3s;
+	&.isActive {
+		display: block;
+		animation: fadeIn 0.6s both;
+	}
+}
+#about .card {
+	height:450px;
+}
+#experience .card {
+	height: 400px;
+}
+#contact .card {
+	height: 430px;
+}
+#contact .card, #experience .card {
+	&_header {
+		height: 80px;
+
+		.avatar {
+			width: 50px; height: 50px;
+			left: 20px;
+			transform: none;
+		}
+		.txt_wrap {
+			margin-left: -30px;
+			.name {
+				padding-top: 16px;
+				font-size: 20px;
+				text-align: left;
+			}
+			.job {
+				font-size: 12px;
+				text-align: left;
+			}
+		}
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translatey(40px);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+

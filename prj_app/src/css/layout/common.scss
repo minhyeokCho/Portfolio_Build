@@ -1,0 +1,172 @@
+/* ============================== [ 공통레이아웃 ] ========================================================================================== */
+
+/* -------------------- #contents ---------------------------------------- */
+body, html {
+	background:linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+	font-size: 10px;
+}
+.inner {
+	width:1200px;
+	margin:0 auto;
+	padding:0 20px;
+	box-sizing:border-box;
+}
+
+/* -------------------- Header ---------------------------------------- */
+header {
+	padding: 10px 0 0 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+
+
+
+	z-index:100;
+	.inner {
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+		padding:10px;
+		border-top:1px solid $black;
+		border-bottom:5px solid $black;
+		background:linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+		.name {
+			font-weight: 600;
+			position: relative;
+			display: block;
+			&::before{
+				display: block;
+				content: '';
+				width: 25px;
+				height: 3px;
+				background-color: $primary;
+				position: absolute;
+				left: -18px; top: 5px;
+				transform: rotate(-45deg);
+			}
+			&::after{
+				display: block;
+				content: '';
+				width: 25px;
+				height: 3px;
+				background-color: $primary;
+				position: absolute;
+				right: -15px; bottom: 5px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	.theme {
+		display: flex;
+		align-items: center;
+
+		&_text {
+			font-weight: 700;
+			&_mask {
+				display: inline-flex;
+				flex-direction:column;
+				height: 20px;
+				overflow: hidden;
+				span {
+					position:relative;
+					transition:transform .7s cubic-bezier(.215,.61,.355,1),-webkit-transform .7s cubic-bezier(.215,.61,.355,1);
+				}
+			}
+		}
+		&_icon {
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			margin-left: 20px;
+			position: relative;
+			&_sun {
+				display: none;
+				position: relative;
+				width: 24px;
+				height: 24px;
+				transition: transform .7s ease,-webkit-transform .7s ease;
+				span {
+					display: block;
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					background-color: #000;
+					z-index: 1;
+					border-radius:50%;
+				}
+				&::before {
+					display: block;
+					content:'';
+					width: 24px;
+					height: 24px;
+					background-color: #fff;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				&::after {
+					display: block;
+					content: '';
+					width: 24px;
+					height: 24px;
+					background-color: #fff;
+					transform:rotate(45deg);
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+			}
+			&_moon {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color:$white;
+				border:2px solid $black;
+				border-radius:50%;
+				box-sizing: border-box;
+				overflow: hidden;
+				&::before {
+					display: block;
+					content:'';
+					width: 90%;
+					height: 90%;
+					background-color:$black;
+					border-radius:50%;
+					transform: translate(35%,-15%);
+					transition: transform 1.3s ease,-webkit-transform 1.3s ease
+				}
+			}
+		}
+		&:hover {
+
+			.theme_icon_moon::before {
+				transform:translate(-35%,-15%)
+			}
+			.theme_icon_sun {
+				transform:rotate(180deg);
+			}
+		}
+	}
+}
+
+/* -------------------- section Title ---------------------------------------- */
+.tit_wrap {
+	margin-bottom:40px;
+	h2 {
+		font-weight:700;
+		font-size:80px;
+		color:#f9f9f9;
+		text-shadow:0 8px 9px #c4b59d, 0px -2px 1px #d5d5d5;
+		letter-spacing:-1px;
+	}
+	p {
+		color:$primary;
+		font-weight:500;
+		font-size:20px;
+	}
+}
