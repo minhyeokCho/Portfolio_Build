@@ -33,7 +33,7 @@ const Detail = ({item}) => {
 				{/* 인트로 이미지 영역 */}
 				<div className='intro_img'>
 					<figure>
-						<img src="/img/temp_02.jpg" alt="" />
+						<img src="/Portfolio_Build/img/temp_02.jpg" alt="" />
 					</figure>
 					<h2>SK렌터카 UI/UX<br/>온라인 플랫폼 리뉴얼 구축</h2>
 					<p></p>

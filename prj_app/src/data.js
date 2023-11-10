@@ -2,7 +2,7 @@ export default[
 	{
 		id:0,
 		type:'Web',
-		url : "/img/jb_logo.png",
+		url : "/Portfolio_Build/img/jb_logo.png",
 		title: 'SK렌터카 UI/UX',
 		point: '#005596'
 	},
