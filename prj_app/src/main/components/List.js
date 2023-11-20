@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from '../../data.js'
 import { Link } from 'react-router-dom';
+import Tag from './Tag.js';
 
 
 const List = () => {
@@ -44,11 +45,14 @@ const List = () => {
 					<div className='cards'>
 						{dataList.map((item, index) => (
 							<div className='card' key={index}>
-								<div className='card_inner'>
-									<Link key={index} to={`/detail/${index}`} className='card_img' data={data}><img src={item.url} alt="" /></Link>
-								</div>
-								<h3>{item.title}</h3>
-								<p>{item.type}</p>
+								<Link key={index} to={`/detail/${index}`} className='card_img' data={data}>
+									<div className='card_inner'>
+										<img src={item.url} alt={item.title} />
+									</div>
+									<Tag tag={item.tag} />
+									<h3>{item.title}</h3>
+									{/* <p>{item.type}</p> */}
+								</Link>
 							</div>
 						))}
 					</div>

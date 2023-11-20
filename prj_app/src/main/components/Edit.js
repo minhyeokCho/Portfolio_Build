@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Edit = () => {
-	const [fs, setFontSize] = useState('100')
+	const [fs, setFontSize] = useState('40')
 	const [ls, setLetterSpacing] = useState('0')
-	const [lh, setLineHeight] = useState('100')
+	const [lh, setLineHeight] = useState('40')
 	const form = useRef();
 	const sendEmail = e => {
 		e.preventDefault();
@@ -27,10 +27,16 @@ const Edit = () => {
 					<h2>Contact</h2>
 				</div>
 				<form ref={form} onSubmit={sendEmail}>
-					<h3>제목</h3>
-					<input name="ask_tit" placeholder='문의 제목' className='inpt'/>
-					<h3>이메일</h3>
-					<input name="user_email" placeholder='이메일' className='inpt'/>
+					<div className='form_wrap'>
+						<div className='inpt_layout'>
+							<h3>제목</h3>
+							<input name="ask_tit" placeholder='문의 제목' className='inpt'/>
+						</div>
+						<div className='inpt_layout'>
+							<h3>이메일</h3>
+							<input name="user_email" placeholder='이메일' className='inpt'/>
+						</div>
+					</div>
 					<h3>문의 내용</h3>
 					<div className="opt_wrap">
 						<div className="inpt_wrap">
@@ -57,7 +63,7 @@ const Edit = () => {
 					</div>
 					<div className="inpt_warp">
 						<div className="txt_area">
-							<textarea rows="" cols="" name='message' style={{fontSize:fs+'px', letterSpacing:ls+'px', lineHeight:lh+'px'}} id="txt_edit">내용을 입력해 주세요</textarea>
+							<textarea rows="" cols="" name='message' style={{fontSize:fs+'px', letterSpacing:ls+'px', lineHeight:lh+'px'}} id="txt_edit" defaultValue={'내용을 입력해 주세요'}/>
 						</div>
 					</div>
 					<input type="submit" value="메일 전송" className='btn_sand'/>

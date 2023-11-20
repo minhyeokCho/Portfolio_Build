@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { useParams} from 'react-router-dom';
 import data from '../data';
 import '../css/layout/sub.scss';
@@ -6,25 +6,27 @@ import '../css/layout/sub.scss';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Head from '../main/components/Header';
+
+import IntroVisual from './IntroVisual';
+import LiveBtn from './LiveBtn';
+import IndexBtn from './IndexBtn';
+import FramePC from './FramePC';
+import FrameMo from './FrameMo';
 
 const Detail = ({item}) => {
 	const params = useParams();
 	const itemId = params.id;
-	const [dataList, setDataList] = useState(data);
-	const info = dataList[itemId];
-	const [colorCode, setColorCode] = useState(data[itemId].point);
-	const [titleList, setTitle] = useState(data[itemId].title)
-	const [type, setType] = useState(data[itemId].type)
 
-	const settings = {
-		infinite: true,
-		speed: 1000,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		variableWidth: true,
-		arrows : true,
-	}
+	const [type, setType] = useState(data[itemId].type) //타입
+	const [titleList, setTitle] = useState(data[itemId].title) //타이틀
+	const [colorCode, setColorCode] = useState(data[itemId].point); //포인트 색상
+	const [date, setDate] = useState(data[itemId].date) //기간
+	const [info, setInfo] = useState(data[itemId].infoList) //소개 정보
+	const [introImg, setIntroImg] = useState(data[itemId].intro) //인트로 이미지
+	const [moSlideImg, setMoSlideImg] = useState(data[itemId].mo_slide) //모바일 슬라이드 목업
+	const [pcSlideImg, setPCSlideImg] = useState(data[itemId].pc_slide) //PC 슬라이드 목업
+	const [liveHTML, setLiveHTML] = useState(data[itemId].LiveLink) //Live Link
+	const [indexHTML, setIndexHTML] = useState(data[itemId].indexHTML) //Index Link
 
 	return (
 		<>
@@ -34,9 +36,7 @@ const Detail = ({item}) => {
 			<div className='sub_wrap'>
 				{/* 인트로 이미지 영역 */}
 				<div className='intro_img'>
-					<figure>
-						<img src="/Portfolio_Build/img/temp_02.jpg" alt="" />
-					</figure>
+					<IntroVisual introImg={introImg}/>
 					<h2>{titleList}<br/>온라인 플랫폼 리뉴얼 구축</h2>
 					<p></p>
 					<span className='arrow'></span>
@@ -54,87 +54,29 @@ const Detail = ({item}) => {
 						</dl>
 						<dl>
 							<dt style={{borderColor:colorCode}}>RELEASE DATE</dt>
-							<dd>2023.05</dd>
+							<dd>{date}</dd>
 						</dl>
 						<dl>
 							<dt style={{borderColor:colorCode}}>소개</dt>
 							<dd>
 								<ul>
-									<li>예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다. </li>
-									<li>트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.</li>
+									{info.map((item, index) => (
+										<li key={index}>
+											{item}
+										</li>
+									))}
 								</ul>
 							</dd>
 						</dl>
 
-						<a href="#" className="btn" style={{borderColor:colorCode}}>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<i style={{backgroundColor:colorCode}}></i>
-							<span>바로가기</span>
-						</a>
+						{liveHTML ? <LiveBtn colorCode={colorCode} liveHTML={liveHTML}/> : null}
+						{indexHTML ? <IndexBtn colorCode={colorCode} indexHTML={indexHTML}/> : null}
 					</div>
 				</div>
 				{/* // Portfolio 정보 */}
 
-				{/* Portfolio 이미지 */}
-				<div className='pf_sec'>
-					<div className='frame frame_pc'>
-						<figure className='frame_img'>
-							<img src="/Portfolio_Build/img/frame_pc.png" alt="" />
-						</figure>
-						<div className='frame_inner'>
-							<div className='scroll_area'>
-								<Slider {...settings} className='pf_slide'>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section02.png" alt="" />
-									</div>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section04.png" alt="" />
-									</div>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section03.png" alt="" />
-									</div>
-								</Slider>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				{/* // Portfolio 이미지 */}
-
-				{/* Portfolio 이미지 */}
-				<div className='pf_sec'>
-					<div className='frame frame_mo'>
-						<figure className='frame_img'>
-							<img src="/Portfolio_Build/img/frame_mo.png" alt="" />
-						</figure>
-						<div className='frame_inner'>
-							<div className='scroll_area'>
-								<Slider {...settings} className='pf_slide'>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section04.png" alt="" />
-									</div>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section03.png" alt="" />
-									</div>
-									<div>
-										<img src="https://www.wylie.co.kr/images/creative/portfolio/sk_rent/img_section02.png" alt="" />
-									</div>
-								</Slider>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				{/* // Portfolio 이미지 */}
-
+				{pcSlideImg ? <FramePC pcSlideImg={pcSlideImg}/> : null}
+				{moSlideImg ? <FrameMo moSlideImg={moSlideImg}/> : null}
 			</div>
 		</>
 	);
