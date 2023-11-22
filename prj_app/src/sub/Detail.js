@@ -1,11 +1,7 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useParams} from 'react-router-dom';
 import data from '../data';
 import '../css/layout/sub.scss';
-
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 import IntroVisual from './IntroVisual';
 import LiveBtn from './LiveBtn';
@@ -13,7 +9,7 @@ import IndexBtn from './IndexBtn';
 import FramePC from './FramePC';
 import FrameMo from './FrameMo';
 
-const Detail = ({item}) => {
+const Detail = () => {
 	const params = useParams();
 	const itemId = params.id;
 
@@ -30,9 +26,12 @@ const Detail = ({item}) => {
 
 	return (
 		<>
+			{/* 뒤로가기 */}
 			<a href="/Portfolio_Build" title='BACK' className='close'>
 				<div className='close_inner'><em className='num_01' style={{backgroundColor:colorCode}}></em><em className='num_02' style={{backgroundColor:colorCode}}></em><span>BACK</span></div>
 			</a>
+			{/*// 뒤로가기 */}
+
 			<div className='sub_wrap'>
 				{/* 인트로 이미지 영역 */}
 				<div className='intro_img'>
@@ -75,8 +74,10 @@ const Detail = ({item}) => {
 				</div>
 				{/* // Portfolio 정보 */}
 
+				{/* 슬라이드 */}
 				{pcSlideImg ? <FramePC pcSlideImg={pcSlideImg}/> : null}
 				{moSlideImg ? <FrameMo moSlideImg={moSlideImg}/> : null}
+				{/*// 슬라이드 */}
 			</div>
 		</>
 	);
