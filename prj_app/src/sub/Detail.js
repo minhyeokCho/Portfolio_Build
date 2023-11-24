@@ -17,6 +17,7 @@ const Detail = () => {
 	const [titleList, setTitle] = useState(data[itemId].title) //타이틀
 	const [colorCode, setColorCode] = useState(data[itemId].point); //포인트 색상
 	const [date, setDate] = useState(data[itemId].date) //기간
+	const [contb, setContb] = useState(data[itemId].contribution) //기여도
 	const [info, setInfo] = useState(data[itemId].infoList) //소개 정보
 	const [introImg, setIntroImg] = useState(data[itemId].intro) //인트로 이미지
 	const [moSlideImg, setMoSlideImg] = useState(data[itemId].mo_slide) //모바일 슬라이드 목업
@@ -54,6 +55,10 @@ const Detail = () => {
 						<dl>
 							<dt style={{borderColor:colorCode}}>RELEASE DATE</dt>
 							<dd>{date}</dd>
+						</dl>
+						<dl>
+							<dt style={{borderColor:colorCode}}>기여도</dt>
+							<dd>{contb}</dd>
 						</dl>
 						<dl>
 							<dt style={{borderColor:colorCode}}>소개</dt>

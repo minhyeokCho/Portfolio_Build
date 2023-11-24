@@ -11,6 +11,8 @@ const FrameMo = ({moSlideImg}) => {
 		slidesToScroll: 1,
 		variableWidth: true,
 		arrows : false,
+		autoplay: true,
+		autoplaySpeed: 5000,
 	}
 
 	// slick arrow
@@ -22,7 +24,7 @@ const FrameMo = ({moSlideImg}) => {
 		<div className='pf_sec'>
 			<div className='frame frame_mo'>
 				<figure className='frame_img'>
-					<img src="/Portfolio_Build/img/frame_mo.png" alt="" />
+					<img src="/Portfolio_Build/img/frame_mo.png" alt="MOBILE FRAME" />
 				</figure>
 				<div className='frame_inner'>
 					<div className='scroll_area'>
@@ -35,14 +37,13 @@ const FrameMo = ({moSlideImg}) => {
 						</Slider>
 					</div>
 				</div>
+				{/* slick arrow */}
+				<div className='slick_arrow'>
+					<button className='prev' onClick={moPrev}>이전</button>
+					<button className='next' onClick={moNext}>다음</button>
+				</div>
+				{/*// slick arrorw */}
 			</div>
-
-			{/* slick arrow */}
-			<div className='slick_arrow'>
-				<button className='prev' onClick={moPrev}>이전</button>
-				<button className='next' onClick={moNext}>다음</button>
-			</div>
-			{/*// slick arrorw */}
 		</div>
 	);
 };

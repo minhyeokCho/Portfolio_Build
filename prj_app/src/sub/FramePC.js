@@ -11,6 +11,8 @@ const FramePC = ({pcSlideImg}) => {
 		slidesToScroll: 1,
 		variableWidth: true,
 		arrows : false,
+		autoplay: true,
+		autoplaySpeed: 5000,
 	}
 
 	// slick arrow
@@ -22,7 +24,7 @@ const FramePC = ({pcSlideImg}) => {
 		<div className='pf_sec'>
 			<div className='frame frame_pc'>
 				<figure className='frame_img'>
-					<img src="/Portfolio_Build/img/frame_pc.png" alt="" />
+					<img src="/Portfolio_Build/img/frame_pc.png" alt="PC FRAME" />
 				</figure>
 				<div className='frame_inner'>
 					<div className='scroll_area'>
@@ -34,16 +36,15 @@ const FramePC = ({pcSlideImg}) => {
 							))}
 						</Slider>
 					</div>
-
 				</div>
-			</div>
 
-			{/* slick arrow */}
-			<div className='slick_arrow pc_arr'>
-				<button className='prev' onClick={pcPrev}>이전</button>
-				<button className='next' onClick={pcNext}>다음</button>
+				{/* slick arrow */}
+				<div className='slick_arrow pc_arr'>
+					<button className='prev' onClick={pcPrev}>이전</button>
+					<button className='next' onClick={pcNext}>다음</button>
+				</div>
+				{/*// slick arrorw */}
 			</div>
-			{/*// slick arrorw */}
 		</div>
 	);
 };

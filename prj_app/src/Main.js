@@ -5,6 +5,7 @@ import Edit from './main/components/Edit';
 import List from './main/components/List';
 import Head from './main/components/Header';
 import UtilBtn from './UtilBtn';
+import Footer from './Footer';
 
 const Main = () => {
 	return (
@@ -14,6 +15,7 @@ const Main = () => {
 				<Card/>
 				<List/>
 				<Edit/>
+				<Footer/>
 			</div>
 			<UtilBtn/>
 		</>

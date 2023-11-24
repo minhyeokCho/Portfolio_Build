@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Tag = ({tag}) => {
-	console.log(tag);
-	const tagList = tag.map((tags) => (<li>{tags}</li>))
+	const tagList = tag.map((tags, index) => (<li key={index}>{tags}</li>))
 	return (
 		<>
 			<ul className='tag'>{tagList}</ul>

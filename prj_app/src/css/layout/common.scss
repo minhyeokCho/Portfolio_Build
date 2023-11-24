@@ -2,12 +2,7 @@
 
 /* -------------------- #contents ---------------------------------------- */
 body, html {
-	background:linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
-	// background-color: hsl(0,0%,18%);
-	// background-size: 3px 3px;
-	// background-image:
-	// 	  linear-gradient(  0deg, hsla(0,0%,0%,0) 0, hsla(0,0%,10%,1) 3px),
-	//   linear-gradient( 90deg, hsla(0,0%,0%,0) 0, hsla(0,0%,10%,1) 5px);
+	background:linear-gradient(to bottom, #E7DBD6 0%, #E7DBD6 100%);
 	font-size: 10px;
 }
 .inner {
@@ -34,9 +29,9 @@ header {
 		display: flex;
 		justify-content: space-between;
 		padding:10px;
-		border-top:1px solid $black;
-		border-bottom:5px solid $black;
-		background:linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+		border-top:1px solid #71584e;
+		border-bottom:5px solid #71584e;
+		background:#E7DBD6;
 		.name {
 			font-weight: 600;
 			position: relative;
@@ -173,8 +168,9 @@ header {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	border:1px solid #111;
-	background: #111 url(../../../public/img/ico_arrow_up.png) no-repeat center;
+	border:1px solid $primary;
+	background: $primary url(../../../public/img/ico_arrow_up.png) no-repeat center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
 }
 
 .file_down {
@@ -279,13 +275,37 @@ header {
 	}
 }
 
+/* -------------------- Footer ---------------------------------------- */
+.footer {
+	padding-bottom: 60px;
+	.inner {
+		display: flex; align-items: center;
+		justify-content: space-between;
+		.name {
+			color: $primary;
+			font-weight: 500;
+		}
+		.bar {
+			margin-top: 3px;
+			width: 75%;
+			height: 4px;
+			background: linear-gradient(to right, rgba(243, 134, 134, 0.1) 0%, #A87E6E 100%);
+		}
+		.copy {
+			color: $primary;
+			font-weight: 500;
+			font-size: 16px;
+		}
+	}
+}
+
 /* -------------------- section Title ---------------------------------------- */
 .tit_wrap {
 	margin-bottom:30px;
 	h2 {
 		font-weight:700;
 		font-size:70px;
-		color:#f9f9f9;
+		color:$primary;
 		text-shadow:0 8px 9px #c4b59d, 0px -2px 1px #d5d5d5;
 		letter-spacing:-1px;
 	}
@@ -294,4 +314,51 @@ header {
 		font-weight:500;
 		font-size:20px;
 	}
+}
+
+@media only screen and (max-width:1200px) {
+	.tit_wrap {
+		h2 {
+			font-size: 60px;
+		}
+	}
+}
+@media only screen and (max-width:768px) {
+	.tit_wrap {
+		h2 {
+			font-size: 50px;
+		}
+	}
+	.footer .inner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap :10px;
+		.bar {
+			width: 100%;
+		}
+	}
+	.file_down {
+		.box {
+			border-radius: 12px;
+			.text {
+				display: none;
+			}
+			.dots {
+				display: none;
+			}
+		}
+		.pdf_box {
+			width: 49px; height: 49px;
+			border-radius:12px;
+			transform: translateX(-20px);
+		}
+		label{
+			&:hover{
+				.box{
+					transform: translateX(-38px);
+				}
+			}
+		}
+	}
+
 }

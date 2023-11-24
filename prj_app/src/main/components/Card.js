@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import Marquee from "react-fast-marquee";
 
 const Card = () => {
 	const [isActive, setIsActive] = useState('about');
+
 	return (
 		<div className='main_visual' id={isActive}>
 			<div className='card'>
@@ -87,6 +89,21 @@ const Card = () => {
 					<button className={isActive ==="experience" ? 'isActive' : null } onClick={() => setIsActive('experience')} data-section="#experience">EXPERIENCE</button>
 					<button className={isActive ==="contact" ? 'isActive' : null } onClick={() => setIsActive('contact')} data-section="#contact">CONTACT</button>
 				</div>
+			</div>
+			<div className='mar_wrap'>
+				<Marquee>
+					<div className='marquee'>
+						<p>A SMALL THING HAS MADE A BIG THINGS.</p>
+					</div>
+					<div className='marquee'>
+						<p>A SMALL THING HAS MADE A BIG THINGS.</p>
+					</div>
+				</Marquee>
+			</div>
+
+			<div className='scroll_down'>
+				<p>SCROLL DOWN</p>
+				<i></i>
 			</div>
 		</div>
 	);
