@@ -8,10 +8,10 @@ const Card = () => {
 		<div className='main_visual' id={isActive}>
 			<div className='card'>
 				<div className="card_header">
-					<img className="avatar" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="avatar" />
+					<img className="avatar" src="/Portfolio_Build/img/thumb.jpg" alt="avatar" />
 					<div className='txt_wrap'>
-						<h1 className="name">MINHYEOK</h1>
-						<p className="job">UI Developer</p>
+						<h1 className="name">CHO MINHYEOK</h1>
+						<p className="job">Publisher</p>
 					</div>
 				</div>
 				<div className='card_main'>
@@ -36,13 +36,13 @@ const Card = () => {
 						<div className='card_content'>
 							<h2 className='card_subtitle'>WORK EXPERIENCE</h2>
 							<div className="card_timeline">
-								<div className="card_item" data-year="2021">
-									<div className="card_item_title">Front-end Developer at <span>JotForm</span></div>
-									<div className="card_item_desc">Disrupt stumptown retro everyday carry unicorn.</div>
+								<div className="card_item" data-year="2023">
+									<div className="card_item_title">와일리</div>
+									<div className="card_item_desc">커머스 및 멤버십 구축 퍼블리싱</div>
 								</div>
-								<div className="card_item" data-year="2020">
-									<div className="card_item_title">UI Developer at <span>GitHub</span></div>
-									<div className="card_item_desc">Developed new conversion funnels and disrupt.</div>
+								<div className="card_item" data-year="2021">
+									<div className="card_item_title">퓨처누리</div>
+									<div className="card_item_desc">도서관 및 SI 구축 퍼블리싱</div>
 								</div>
 							</div>
 						</div>
@@ -54,20 +54,20 @@ const Card = () => {
 						<div className='card_content'>
 							<h2 className='card_subtitle'>CONTACT</h2>
 							<div className="card_contact_wrapper">
-								<div className="card_contact">
+								{/* <div className="card_contact">
 									<i>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 										<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
 										<circle cx="12" cy="10" r="3"></circle></svg>
 									</i>
-									<p>Algonquin Rd, Three Oaks Vintage, MI, 49128</p>
-								</div>
+									<p></p>
+								</div> */}
 								<div className="card_contact">
 									<i>
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 										<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path></svg>
 									</i>
-									<p>(269) 756-9809</p>
+									<p>010-9927-3400</p>
 								</div>
 								<div className="card_contact">
 									<i>
@@ -77,7 +77,7 @@ const Card = () => {
 									</i>
 									<p>whalsgur0000@naver.com</p>
 								</div>
-								<button className="contact_me">WORK TOGETHER</button>
+								<a href="#edit" className="contact_me">WORK TOGETHER</a>
 							</div>
 						</div>
 					</div>

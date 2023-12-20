@@ -21,7 +21,7 @@ const Edit = () => {
 		);
 	};
 	return (
-		<section className="edit">
+		<section className="edit" id="edit">
 			<div className="inner">
 				<div className='tit_wrap'>
 					<h2>Contact</h2>

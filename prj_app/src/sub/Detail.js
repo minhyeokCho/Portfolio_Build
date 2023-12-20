@@ -37,7 +37,7 @@ const Detail = () => {
 				{/* 인트로 이미지 영역 */}
 				<div className='intro_img'>
 					<IntroVisual introImg={introImg}/>
-					<h2>{titleList}<br/>온라인 플랫폼 리뉴얼 구축</h2>
+					<h2>{titleList}</h2>
 					<p></p>
 					<span className='arrow'></span>
 				</div>
