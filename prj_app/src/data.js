@@ -4,7 +4,7 @@ export default[
 		type:'Hybrid',
 		tag:[
 			'적응형',
-			'커머스'
+			'여행'
 		],
 		url : "/Portfolio_Build/img/logo/sk_logo.png",
 		title: 'SK렌터카 / 빌리카 리뉴얼',
@@ -12,8 +12,9 @@ export default[
 		date : '2023.04 ~ 2024.02',
 		contribution : '50%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'예약, 결제, 예약 변경 등 여행 예약 프로세스 작업을 진행',
+			'PC와 Mobile 각각 작업하여 적응형 웹으로 작업',
+			'영문 웹 사이트 작업 진행'
 		],
 		intro: '/Portfolio_Build/img/intro/sk_intro.png',
 		mo_slide : [
@@ -33,7 +34,7 @@ export default[
 		type:'Hybrid',
 		tag:[
 			'적응형',
-			'커머스'
+			'멤버쉽'
 		],
 		url : "/Portfolio_Build/img/logo/ediya_logo.png",
 		title: '이디야 멤버스',
@@ -41,8 +42,8 @@ export default[
 		date : '2022.09 ~ 2023.03',
 		contribution : '70%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'퍼블리싱팀 PL로 참여',
+			'퍼블리싱 가이드 작성',
 		],
 		intro: '/Portfolio_Build/img/intro/ediya_intro.png',
 		mo_slide : [
@@ -70,8 +71,8 @@ export default[
 		date : '2022.04 ~ 2022.08',
 		contribution : '25%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'결제, 예약, 배송, 취소 등 커머스 프로세스 작업 진행',
+			'복권 스크래치, 룰렛 이벤트 등 다양한 동적 페이지 작업',
 		],
 		intro: '/Portfolio_Build/img/intro/chk_intro.png',
 		mo_slide : [
@@ -99,8 +100,7 @@ export default[
 		date : '2021.10 ~ 2022.04',
 		contribution : '20%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'APP 퍼블리싱 작업 (아이폰 노치 영역)',
 		],
 		intro: '/Portfolio_Build/img/intro/cu_intro.png',
 		mo_slide : [
@@ -122,8 +122,7 @@ export default[
 		date : '2021.09 ~ 2022.10',
 		contribution : '60%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'Vue.js 를 활용하여 관리자 페이지 컴포넌트 작업',
 		],
 		intro: '/Portfolio_Build/img/intro/hm_intro.png',
 	},
@@ -140,8 +139,8 @@ export default[
 		date : '2023.03 ~ 2023.04',
 		contribution : '80%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'로펌 법무법인 에스의 기업 소개 홈페이지입니다.',
+			'소개, 신청, 게시판 등 소개 페이지 퍼블리싱 작업',
 		],
 		intro: '/Portfolio_Build/img/intro/law_intro.png',
 		mo_slide : [
@@ -158,61 +157,59 @@ export default[
 		indexHTML : 'https://minhyeokcho.github.io/K_lawthes/list.html',
 
 	},
-	{
-		id:6,
-		type:'Web',
-		tag:[
-			'반응형',
-			'브랜드'
-		],
-		url : "/Portfolio_Build/img/logo/ic_logo.png",
-		title: '인천김포고속도로(주)',
-		point : '#146f50',
-		date : '2023.01 ~ 2023.02',
-		contribution : '100%',
-		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
-		],
-		intro: '/Portfolio_Build/img/intro/ic_intro.png',
-		mo_slide : [
-			'/Portfolio_Build/img/slide/slide_ic_mo_01.png',
-		],
-		pc_slide : [
-			'/Portfolio_Build/img/slide/slide_ic_pc_01.png',
-		],
-		LiveLink : 'http://www.igex.co.kr/',
-	},
-	{
-		id:7,
-		type:'Web',
-		tag:[
-			'반응형',
-			'브랜드'
-		],
-		url : "/Portfolio_Build/img/logo/lime_logo.png",
-		title: '라임에듀',
-		point : '#43D32B',
-		date : '2023.02 ~ 2023.03',
-		contribution : '100%',
-		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
-		],
-		intro: '/Portfolio_Build/img/intro/lime_intro.png',
-		mo_slide : [
-			'/Portfolio_Build/img/slide/slide_lime_mo_01.png',
-			'/Portfolio_Build/img/slide/slide_lime_mo_02.png',
-			'/Portfolio_Build/img/slide/slide_lime_mo_03.png',
-		],
-		pc_slide : [
-			'/Portfolio_Build/img/slide/slide_lime_pc_01.png',
-			'/Portfolio_Build/img/slide/slide_lime_pc_02.png',
-			'/Portfolio_Build/img/slide/slide_lime_pc_03.png',
-		],
-		LiveLink : 'https://minhyeokcho.github.io/K_lime/main.html',
-		indexHTML : 'https://minhyeokcho.github.io/K_lime/sub/status.html'
-	},
+	// {
+	// 	id:6,
+	// 	type:'Web',
+	// 	tag:[
+	// 		'반응형',
+	// 		'브랜드'
+	// 	],
+	// 	url : "/Portfolio_Build/img/logo/ic_logo.png",
+	// 	title: '인천김포고속도로(주)',
+	// 	point : '#146f50',
+	// 	date : '2023.01 ~ 2023.02',
+	// 	contribution : '100%',
+	// 	infoList : [
+	// 		'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
+	// 	],
+	// 	intro: '/Portfolio_Build/img/intro/ic_intro.png',
+	// 	mo_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_ic_mo_01.png',
+	// 	],
+	// 	pc_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_ic_pc_01.png',
+	// 	],
+	// 	LiveLink : 'http://www.igex.co.kr/',
+	// },
+	// {
+	// 	id:7,
+	// 	type:'Web',
+	// 	tag:[
+	// 		'반응형',
+	// 		'브랜드'
+	// 	],
+	// 	url : "/Portfolio_Build/img/logo/lime_logo.png",
+	// 	title: '라임에듀',
+	// 	point : '#43D32B',
+	// 	date : '2023.02 ~ 2023.03',
+	// 	contribution : '100%',
+	// 	infoList : [
+	// 		'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
+	// 	],
+	// 	intro: '/Portfolio_Build/img/intro/lime_intro.png',
+	// 	mo_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_lime_mo_01.png',
+	// 		'/Portfolio_Build/img/slide/slide_lime_mo_02.png',
+	// 		'/Portfolio_Build/img/slide/slide_lime_mo_03.png',
+	// 	],
+	// 	pc_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_lime_pc_01.png',
+	// 		'/Portfolio_Build/img/slide/slide_lime_pc_02.png',
+	// 		'/Portfolio_Build/img/slide/slide_lime_pc_03.png',
+	// 	],
+	// 	LiveLink : 'https://minhyeokcho.github.io/K_lime/main.html',
+	// 	indexHTML : 'https://minhyeokcho.github.io/K_lime/sub/status.html'
+	// },
 	{
 		id:8,
 		type:'APP',
@@ -226,8 +223,7 @@ export default[
 		date : '2023.04 ~ 2023.05',
 		contribution : '100%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'여행 콘텐츠를 기반으로 하는 게임 어플 칩스터입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/chipster_intro.png',
 		mo_slide : [
@@ -250,8 +246,7 @@ export default[
 		date : '2023.04 ~ 2023.06',
 		contribution : '80%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'일산 원마운트 소개 홈페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/onemount_intro.png',
 		mo_slide : [
@@ -279,8 +274,7 @@ export default[
 		date : '2023.05 ~ 2023.06',
 		contribution : '100%',
 		infoList : [
-			'예약-대여-반납 전과정 온라인 내재화하여 SK렌터카만의 경험을 제공하였습니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'신체 사이즈 측정 서비스를 제공하는 사이즈마인의 모바일 버전 솔루션입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/sizemine_intro.png',
 		mo_slide : [
@@ -303,8 +297,7 @@ export default[
 		date : '2023.05 ~ 2023.06',
 		contribution : '100%',
 		infoList : [
-			'글로벌 호스피텔리티 업체 (주)GHS의 기업 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'뷰티 업체 더마젝의 기업 소개 홈페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/dermaject_intro.png',
 		mo_slide : [
@@ -334,7 +327,7 @@ export default[
 		contribution : '100%',
 		infoList : [
 			'뮤지션 투자 기업 빌드업뮤직의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'Fullpage 플러그인을 사용하여 작업하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/buildmusic_intro.png',
 		mo_slide : [
@@ -363,7 +356,6 @@ export default[
 		contribution : '100%',
 		infoList : [
 			'조경 및 도시 설계 기업 (주)지오이엔지의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/geo_intro.png',
 		mo_slide : [
@@ -391,8 +383,7 @@ export default[
 		date : '2023.06 ~ 2023.07',
 		contribution : '100%',
 		infoList : [
-			'조경 및 도시 설계 기업 (주)지오이엔지의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'새송이버섯 생산 업체 (주)오늘의 기업 소개 홈페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/oneul_intro.png',
 		mo_slide : [
@@ -421,7 +412,6 @@ export default[
 		contribution : '100%',
 		infoList : [
 			'방과 후 e스포츠 교육 프로그램 ClassE의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/classE_intro.png',
 		pc_slide : [
@@ -445,7 +435,6 @@ export default[
 		contribution : '80%',
 		infoList : [
 			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/bosang_intro.png',
 		mo_slide : [
@@ -473,8 +462,7 @@ export default[
 		date : '2023.09 ~ 2023.10',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'장비 모니터링 서비스 업체 eWAVE의 대시보드(관리자) 페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/eWave_intro.png',
 		mo_slide : [
@@ -502,8 +490,7 @@ export default[
 		date : '2023.11 ~ 2023.12',
 		contribution : '90%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'play on the pitch의 풋살장 예약 및 소개 페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/pop_intro.png',
 		mo_slide : [
@@ -532,8 +519,9 @@ export default[
 		date : '2020.09 ~ 2020.11',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'충남대학교 도서관 검색 홈페이지입니다.',
+			'Fullpage 플러그인을 사용하여 작업하였습니다.',
+			'국/영문 페이지 작업하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/cnu_intro.png',
 		mo_slide : [
@@ -561,8 +549,7 @@ export default[
 		date : '2020.10 ~ 2020.11',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'계명대학교 도서관 검색 홈페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/kmu_intro.png',
 		mo_slide : [
@@ -585,13 +572,13 @@ export default[
 			'도서관',
 		],
 		url : "/Portfolio_Build/img/logo/kmou_logo.png",
-		title: '해양대학교 도서관',
+		title: '한국해양대학교 도서관',
 		point : '#114470',
 		date : '2020.11 ~ 2021.01',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'한국해양대학교 도서관 검색 홈페이지입니다.',
+			'국/영문 페이지 작업하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/kmou_intro.png',
 		mo_slide : [
@@ -620,8 +607,9 @@ export default[
 		date : '2020.12 ~ 2021.03',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'한국해양대학교 도서관 검색 홈페이지입니다.',
+			'국/영문 페이지 작업하였습니다.',
+			'국/영문 페이지 웹 접근성 마크 획득하였습니다.'
 		],
 		intro: '/Portfolio_Build/img/intro/jbnu_intro.png',
 		mo_slide : [
@@ -649,8 +637,8 @@ export default[
 		date : '2021.01 ~ 2021.06',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'국방대학교 도서관 검색 홈페이지입니다.',
+			'검색 솔루션 및 템플릿 작업을 하여 유연하게 사용될 수 있도록 작업하였습니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/nddl_m1_intro.png',
 		mo_slide : [
@@ -678,8 +666,8 @@ export default[
 		date : '2021.01 ~ 2021.06',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'육군사관학교 학술정보원 도서 검색 홈페이지입니다.',
+			'검색 솔루션 및 템플릿 작업을 하여 유연하게 사용될 수 있도록 작업하였습니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/nddl_ad_intro.png',
 		mo_slide : [
@@ -707,8 +695,8 @@ export default[
 		date : '2021.01 ~ 2021.06',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'공군사관학교 학술정보원 도서 검색 홈페이지입니다.',
+			'검색 솔루션 및 템플릿 작업을 하여 유연하게 사용될 수 있도록 작업하였습니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/nddl_f2_intro.png',
 		mo_slide : [
@@ -736,8 +724,8 @@ export default[
 		date : '2021.01 ~ 2021.06',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'해군사관학교 학술정보원 도서 검색 홈페이지입니다.',
+			'검색 솔루션 및 템플릿 작업을 하여 유연하게 사용될 수 있도록 작업하였습니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/nddl_n8_intro.png',
 		mo_slide : [
@@ -760,13 +748,12 @@ export default[
 			'도서관',
 		],
 		url : "/Portfolio_Build/img/logo/tu_logo.png",
-		title: '태국 타마삿 대학교 학술정보원',
+		title: '태국 타마삿 대학교 도서관',
 		point : '#C00832',
 		date : '2021.07 ~ 2021.08',
 		contribution : '100%',
 		infoList : [
-			'노무법인 더보상의 기업 소개 홈페이지입니다.',
-			'트렌디한 비주얼과 SK렌터카 만의 보이스톤 제공하고 사용이 복잡하고 난해한 화면들은 과감히 개선하였습니다.'
+			'태국 타마삿 대학교 도서관 검색 홈페이지입니다.',
 		],
 		intro: '/Portfolio_Build/img/intro/tu_intro.png',
 		mo_slide : [
