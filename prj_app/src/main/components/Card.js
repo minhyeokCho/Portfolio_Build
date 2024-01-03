@@ -11,7 +11,7 @@ const Card = () => {
 					<img className="avatar" src="/Portfolio_Build/img/thumb.jpg" alt="avatar" />
 					<div className='txt_wrap'>
 						<h1 className="name">CHO MINHYEOK</h1>
-						<p className="job">Publisher</p>
+						<p className="job">UI Developer</p>
 					</div>
 				</div>
 				<div className='card_main'>
@@ -19,7 +19,10 @@ const Card = () => {
 					<div className={isActive ==="about" ? 'isActive' : null } id="about">
 						<div className='card_content'>
 							<h2 className='card_subtitle'>ABOUT</h2>
-							<p className='card_desc'>Whatever tattooed stumptown art party sriracha gentrify hashtag intelligentsia readymade schlitz brooklyn disrupt</p>
+							<p className='card_desc'>
+							안녕하세요. 4년차 UI 개발자 조민혁입니다 :)<br/>
+							단순하지만 탄탄한 마크업, 유연하고 재사용성이 높은 코드를 지향합니다. 다양한 포트폴리오를 쌓으며 배우고 성장하는 퍼블리셔가 되겠습니다.
+							</p>
 						</div>
 						<div className='card_social'>
 							<a href="#">
@@ -36,13 +39,13 @@ const Card = () => {
 						<div className='card_content'>
 							<h2 className='card_subtitle'>WORK EXPERIENCE</h2>
 							<div className="card_timeline">
-								<div className="card_item" data-year="2023">
+								<div className="card_item" data-year="2024">
 									<div className="card_item_title">와일리</div>
 									<div className="card_item_desc">커머스 및 멤버십 구축 퍼블리싱</div>
 								</div>
 								<div className="card_item" data-year="2021">
 									<div className="card_item_title">퓨처누리</div>
-									<div className="card_item_desc">도서관 및 SI 구축 퍼블리싱</div>
+									<div className="card_item_desc">도서관 및 검색 솔루션 구축</div>
 								</div>
 							</div>
 						</div>

@@ -11,7 +11,7 @@ const UtilBtn = () => {
 	return (
 		<div className='util_btn'>
 			<div className='file_down'>
-				<a href="/Portfolio_Build/img/report.pdf" download="" id="down_input">
+				<a href="/Portfolio_Build/img/조민혁_이력서.pdf" download="" id="down_input">
 					<label htmlFor="down_input">
 						<div className='box'>
 							<svg width="30" height="20" viewBox="0 0 66 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@ const UtilBtn = () => {
 							</svg>
 							<div className='text'>
 								<p>이력서 다운로드</p>
-								<span>Modified : 2023.12</span>
+								<span>Modified : 2024.01</span>
 							</div>
 							<div className="dots">
 								<div></div>
