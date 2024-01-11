@@ -21,16 +21,16 @@ const Card = () => {
 							<h2 className='card_subtitle'>ABOUT</h2>
 							<p className='card_desc'>
 							안녕하세요. 4년차 UI 개발자 조민혁입니다 :)<br/>
-							단순하지만 탄탄한 마크업, 유연하고 재사용성이 높은 코드를 지향합니다. 다양한 포트폴리오를 쌓으며 배우고 성장하는 퍼블리셔가 되겠습니다.
+							단순하지만 탄탄한 마크업, 유연하고 재사용성이 높은 코드를 지향합니다. 다양한 포트폴리오를 쌓으며 배우고 성장하는 UI 개발자가 되겠습니다.
 							</p>
 						</div>
-						<div className='card_social'>
+						{/* <div className='card_social'>
 							<a href="#">
 								<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"></path>
 								</svg>
 							</a>
-						</div>
+						</div> */}
 					</div>
 					{/*// ABOUT */}
 

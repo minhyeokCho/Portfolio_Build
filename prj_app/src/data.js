@@ -77,7 +77,7 @@ export default[
 			'결제, 예약, 배송, 취소 등 커머스 프로세스 작업 진행',
 			'복권 스크래치, 룰렛 이벤트 등 다양한 동적 페이지 작업',
 		],
-		intro: '/Portfolio_Build/img/intro/chk_intro.png',
+		intro: '/Portfolio_Build/img/intro/chk_intro.PNG',
 		mo_slide : [
 			'/Portfolio_Build/img/slide/slide_chk_mo_01.png',
 			'/Portfolio_Build/img/slide/slide_chk_mo_02.png',
@@ -103,7 +103,7 @@ export default[
 		date : '2021.10 ~ 2022.04',
 		contribution : '20%',
 		infoList : [
-			'CU APP 퍼블리싱 작업',
+			'모든 모바일 기기에 최적화된 CU APP 구축',
 			'스크롤 이벤트를 활용한 랜딩페이지 구축'
 		],
 		intro: '/Portfolio_Build/img/intro/cu_intro.png',
@@ -225,7 +225,7 @@ export default[
 		title: 'Chipster',
 		point : '#28AA7F',
 		date : '2023.04 ~ 2023.05',
-		contribution : '100%',
+		contribution : '80%',
 		infoList : [
 			'여행 콘텐츠를 기반으로 하는 게임 APP 칩스터',
 		],
@@ -276,7 +276,7 @@ export default[
 		title: 'Size Mine',
 		point : '#D01743',
 		date : '2023.05 ~ 2023.06',
-		contribution : '100%',
+		contribution : '70%',
 		infoList : [
 			'신체 사이즈 측정 서비스를 제공하는 사이즈마인의 모바일 버전 솔루션',
 		],
@@ -288,34 +288,34 @@ export default[
 		],
 		indexHTML : 'https://minhyeokcho.github.io/K_sizemine/list.html'
 	},
-	{
-		id:11,
-		type:'Web',
-		tag:[
-			'반응형',
-			'브랜드'
-		],
-		url : "/Portfolio_Build/img/logo/dermaject_logo.png",
-		title: 'Dermaject',
-		point : '#253572',
-		date : '2023.05 ~ 2023.06',
-		contribution : '100%',
-		infoList : [
-			'뷰티 업체 더마젝의 기업 소개 홈페이지',
-		],
-		intro: '/Portfolio_Build/img/intro/dermaject_intro.png',
-		mo_slide : [
-			'/Portfolio_Build/img/slide/slide_dermaject_mo_01.png',
-			'/Portfolio_Build/img/slide/slide_dermaject_mo_02.png',
-			'/Portfolio_Build/img/slide/slide_dermaject_mo_03.png',
-		],
-		pc_slide : [
-			'/Portfolio_Build/img/slide/slide_dermaject_pc_01.png',
-			'/Portfolio_Build/img/slide/slide_dermaject_pc_02.png',
-			'/Portfolio_Build/img/slide/slide_dermaject_pc_03.png',
-		],
-		LiveLink : 'https://www.dermaject.com/'
-	},
+	// {
+	// 	id:11,
+	// 	type:'Web',
+	// 	tag:[
+	// 		'반응형',
+	// 		'브랜드'
+	// 	],
+	// 	url : "/Portfolio_Build/img/logo/dermaject_logo.png",
+	// 	title: 'Dermaject',
+	// 	point : '#253572',
+	// 	date : '2023.05 ~ 2023.06',
+	// 	contribution : '100%',
+	// 	infoList : [
+	// 		'뷰티 업체 더마젝의 기업 소개 홈페이지',
+	// 	],
+	// 	intro: '/Portfolio_Build/img/intro/dermaject_intro.png',
+	// 	mo_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_mo_01.png',
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_mo_02.png',
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_mo_03.png',
+	// 	],
+	// 	pc_slide : [
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_pc_01.png',
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_pc_02.png',
+	// 		'/Portfolio_Build/img/slide/slide_dermaject_pc_03.png',
+	// 	],
+	// 	LiveLink : 'https://www.dermaject.com/'
+	// },
 	{
 		id:12,
 		type:'Web',
@@ -328,7 +328,7 @@ export default[
 		title: 'BUILDMUSIC',
 		point : '#000',
 		date : '2023.06 ~ 2023.07',
-		contribution : '100%',
+		contribution : '70%',
 		infoList : [
 			'뮤지션 투자 기업 빌드업뮤직의 기업 소개 홈페이지',
 			'Fullpage 플러그인을 사용하여 작업'
@@ -357,7 +357,7 @@ export default[
 		title: '지오이엔지',
 		point : '#00ADEF',
 		date : '2023.06 ~ 2023.07',
-		contribution : '100%',
+		contribution : '70%',
 		infoList : [
 			'조경 및 도시 설계 기업 (주)지오이엔지의 기업 소개 홈페이지',
 		],
@@ -385,7 +385,7 @@ export default[
 		title: '(주)오늘',
 		point : '#319400',
 		date : '2023.06 ~ 2023.07',
-		contribution : '100%',
+		contribution : '80%',
 		infoList : [
 			'새송이버섯 생산 업체 (주)오늘의 기업 소개 홈페이지',
 		],
@@ -413,7 +413,7 @@ export default[
 		title: 'ClassE',
 		point : '#0CDFF6',
 		date : '2023.08 ~ 2023.09',
-		contribution : '100%',
+		contribution : '70%',
 		infoList : [
 			'방과 후 e스포츠 교육 프로그램 ClassE의 기업 소개 홈페이지',
 		],
@@ -464,7 +464,7 @@ export default[
 		title: 'eWave (Admin)',
 		point : '#0071B7',
 		date : '2023.09 ~ 2023.10',
-		contribution : '100%',
+		contribution : '80%',
 		infoList : [
 			'장비 모니터링 서비스 업체 eWAVE의 대시보드(관리자) 페이지',
 		],
