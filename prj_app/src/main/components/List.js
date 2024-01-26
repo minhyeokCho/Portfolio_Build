@@ -30,7 +30,7 @@ const List = () => {
 		<section className='pf_list'>
 			<div className='inner'>
 				<div className='tit_wrap'>
-					<h2>List</h2>
+					<h2>Project</h2>
 				</div>
 				<div className='tab'>
 					<ul>
@@ -45,7 +45,7 @@ const List = () => {
 					<div className='cards'>
 						{dataList.map((item, index) => (
 							<div className='card' key={index}>
-								<Link key={index} to={`/detail/${index}`} className='card_img' data={data}>
+								<Link key={index} to={`/detail/${index}`} className='card_img' >
 									<div className='card_inner'>
 										<img src={item.url} alt={item.title} />
 									</div>

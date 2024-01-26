@@ -73,7 +73,7 @@
 	&_desc {
 		line-height: 1.6em;
 		color: #636b6f;
-		font-size: 18px;
+		font-size: 16px;
 		margin-bottom: 20px;
 	}
 	&_social {
@@ -83,14 +83,15 @@
 			height: 32px;
 			border-radius: 50%;
 			background-color: rgba(93, 133, 193, 0.05);
-			margin-right: 10px;
-			margin-bottom: 30px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			*{
-				width: 16px;
-				fill:#a5b5ce;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			img {
+				width: 100%;
+			}
+			& ~ a {
+				margin-left: 15px;
 			}
 		}
 	}
@@ -398,6 +399,7 @@
 		}
 		&_desc {
 			font-size: 16px;
+			margin-bottom: 10px;
 		}
 		&_btn {
 			button {
@@ -426,6 +428,13 @@
 		}
 		.contact_me {
 			padding: 10px;
+		}
+		&_social {
+			a {
+				width: 24px;
+				height: 24px;
+
+			}
 		}
 	}
 	#contact .card, #experience .card {

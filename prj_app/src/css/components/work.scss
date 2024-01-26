@@ -1,0 +1,60 @@
+/* ============================== [ Work UI ] ========================================================================================== */
+.exp_list {
+	padding-top: 150px;
+
+	.comp {
+		& ~ .comp {
+			margin-top: 100px;
+		}
+		.tit_area {
+			h3 {
+				font-size: 30px;
+				font-weight: 700;
+			}
+			p {
+				color: #81868c;
+				font-weight: 600;
+				margin-top: 10px;
+				& ~ p {
+					margin-top: 0;
+				}
+			}
+		}
+		.cotn {
+			margin-top: 50px;
+			h4 {
+				font-weight: 700;
+				font-size: 15px;
+			}
+			.w_li {
+				li {
+					margin-top: 5px;
+					font-weight: 500;
+
+					&:before {
+						content: '- ';
+					}
+				}
+			}
+			.skill_li {
+				margin-top: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				gap:20px;
+
+				li {
+					figure {
+						width: 70px;
+						height: 70px;
+					}
+					p {
+						text-align: center;
+						font-size: 16px;
+						font-weight: 700;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
